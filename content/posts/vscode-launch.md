@@ -4,8 +4,9 @@ title = "VSCode launch"
 
 
 
-# 调试bash脚本
-```
+## 调试bash脚本
+
+```json
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -22,9 +23,9 @@ title = "VSCode launch"
 }
 ```
 
+## launch.json文件模板
 
-# launch.json文件模板
-```
+```json
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
