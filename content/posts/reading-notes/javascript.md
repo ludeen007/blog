@@ -2,6 +2,8 @@
 title: "《Javascript高级程序设计》3e读书笔记"
 date: 2019-12-11T18:42:55+08:00
 draft: false
+categories: ["读书笔记"]
+tags: ["读书笔记","Javascript","编程语言"]
 ---
 
 ### for-in语句遍历属性

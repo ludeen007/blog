@@ -1,5 +1,7 @@
 +++
-title = "VSCode launch"
+title = "VSCode launch.json示例"
+categories = ["VSCode"]
+tags = ["Development", "VSCode", "tips"]
 +++
 
 

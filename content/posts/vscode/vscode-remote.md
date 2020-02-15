@@ -1,5 +1,7 @@
 +++
 title = "配置VSCode远程开发"
+categories = ["VSCode"]
+tags = ["Development", "VSCode", "tips"]
 +++
 
 
