@@ -5,7 +5,7 @@ title = "VSCode launch"
 
 
 # 调试bash脚本
-
+```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -20,9 +20,11 @@ title = "VSCode launch"
             "args": []
         }    ]
 }
+```
+
 
 # launch.json文件模板
-
+```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -110,3 +112,4 @@ title = "VSCode launch"
         }
     ],
 }
+```
