@@ -42,8 +42,31 @@ netstat -pan | grep 25672
 ps aux | grep 5334
 ```
 
-## 查看cpu和内存信息
+## 查看 cpu 和内存信息
 
 ```bash
 cat /proc/meminfo
+```
+
+## rabbimqadmin
+
+```bash
+rabbitmqadmin.py -H 172.16.87.31 -P 32577 -u guest -p guest list queues | grep  amq | awk {'print $2'} | xargs -I {} rabbitmqadmin.py -H 172.16.87.31 -P 32577 -u guest -p guest delete queue name={}
+
+
+#!/bin/bash
+#删除固定名字的队列
+queues=(
+    queue1
+    queue2
+)
+
+HOST=localhost
+PORT=5672
+PREFIX=test.
+VHOST=/
+
+for value in "${queues[@]}"; do
+    rabbitmqadmin.py -H $HOST -P $PORT -V $VHOST -u guest -p guest delete queue name=$PREFIX$value
+done
 ```
