@@ -5,3 +5,6 @@
 	path = public
 	url = git@github.com:ludeen007/ludeen007.github.io.git
 	branch = master
+[submodule "themes/zzo"]
+	path = themes/zzo
+	url = https://github.com/zzossig/hugo-theme-zzo.git
