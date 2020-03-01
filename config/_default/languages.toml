@@ -1,9 +1,4 @@
 [en]
-title = "Hugo Zzo Theme"
+title = "千里之行始于足下"
 languageName = "English"
 weight = 1
-
-[ko]
-title = "Hugo Zzo Theme"
-languageName = "한국어"
-weight = 2

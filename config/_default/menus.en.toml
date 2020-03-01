@@ -1,25 +1,20 @@
 [[main]]
-  identifier = "about"
-  name = "about"
-  url = "about"
+  identifier = "posts"
+  name = "文章"
+  url = "posts"
   weight = 1
 
 [[main]]
   identifier = "archive"
-  name = "archive"
+  name = "归档"
   url = "archive"
   weight = 2
 
 [[main]]
   identifier = "gallery"
-  name = "gallery"
+  name = "相册"
   url = "gallery"
   weight = 3
-    
-[[main]]
-  parent = "gallery"
-  name = "cartoon"
-  url = "gallery/cartoon"
 
 [[main]]
   parent = "gallery"
@@ -27,13 +22,13 @@
   url = "gallery/photo"
 
 [[main]]
-  identifier = "posts"
-  name = "posts"
-  url = "posts"
+  identifier = "about"
+  name = "关于"
+  url = "about"
   weight = 4
-    
+
 [[main]]
-  identifier = "notes"
-  name = "notes"
-  url = "notes"
+  identifier = "contact"
+  name = "反馈"
+  url = "contact"
   weight = 5

@@ -1,10 +1,11 @@
-logoText = "Zzo" # Logo text that appears in the site navigation bar.
+logoText = "Stay foolish, stay hungry" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "The Zzo theme for Hugo example site." # for SEO
+description = "a humble programmer's site." # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
-useFaviconGenerator = false # https://www.favicon-generator.org/
+#useFaviconGenerator = false # https://www.favicon-generator.org/
+useFaviconGenerator = true # https://www.favicon-generator.org/
 languagedir = "ltr" # ltr / rtl
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"] # select options for site color theme
@@ -29,21 +30,23 @@ enableSearchHighlight = true # when true, search keyword will be highlighted
 enableGoToTop = true # scroll to top
 enableWhoami = true # at the end of single page
 summaryShape = "classic" # card, classic, compact
+searchResultPosition = "main" # side, main
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
-archivePaginate = 13 # items per page
+archivePaginate = 30 # items per page
 paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
 talksPaginate = 8 # items per page
 talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
-bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
+myname = "jack"
+email = "ludeen007@gmail.com"
+whoami = "Blockchain Developer"
+#bioImageUrl = "" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
+bioImageUrl = "images/whoami/selfies.jpg" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
 useGravatar = false # we use this option highest priority
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://github.com/zzossig/hugo-theme-zzo"
+location = "China, Shenzhen"
+organization = "LLS"
+link = "https://ludeen007.github.io/"
 
 # sidebar
 enableBio = true # in home page sidebar
@@ -59,7 +62,7 @@ hideToc = false # Hide or Show toc
 tocPosition = "inner" # inner, outer
 tocFolding = false
 enableTocSwitch = true # single page table of contents visibility switch
-itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
+itemsPerCategory = 15 # maximum number of posts shown in the sidebar.
 sidebarPosition = "right" # bio, profile component layout position
 tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article
 enableSidebarPostsByOrder = false # another lists in the sidebar
@@ -126,43 +129,43 @@ scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
 dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-email = "mailto:your@email.com"
-phone = ""
-facebook = "http://example.org/"
-twitter = "http://example.org/"
-github = "https://github.com/zzossig/hugo-theme-zzo"
+email = "1306066931@qq.com"
+#phone = ""
+#facebook = "http://example.org/"
+#twitter = "http://example.org/"
+github = "https://ludeen007.github.io/"
 stack-overflow = ""
-instagram = ""
-google-plus = ""
-youtube = ""
-medium = ""
-tumblr = ""
-linkedin = ""
-pinterest = ""
-stack-exchange = ""
-telegram = ""
-steam = ""
-weibo = ""
-douban = ""
-csdn = ""
-gitlab = ""
-mastodon = ""
-jianshu = ""
-zhihu = ""
-signal = ""
-whatsapp = ""
-matrix = ""
-xmpp = ""
-dev-to = ""
-gitea = ""
+#instagram = ""
+#google-plus = ""
+#youtube = ""
+#medium = ""
+#tumblr = ""
+#linkedin = ""
+#pinterest = ""
+#stack-exchange = ""
+#telegram = ""
+#steam = ""
+#weibo = ""
+#douban = ""
+#csdn = ""
+#gitlab = ""
+#mastodon = ""
+#jianshu = ""
+#zhihu = ""
+#signal = ""
+#whatsapp = ""
+#matrix = ""
+#xmpp = ""
+#dev-to = ""
+#gitea = ""
 
 [donationOptions]
 enable = false # if set, the donation button will show up on the single page.
-alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
-wechat = "" # Wechat pay QR Code image (example path: same as above)
-paypal = "" # Paypal URL
-patreon = "" # Patreon URL
-bitcoin = "" # example path: images/donation/bitcoin-code-image.png
+alipay = "images/donation/alipay-qrcode.png" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
+wechat = "images/donation/wechatpay-qrcode.png" # Wechat pay QR Code image (example path: same as above)
+#paypal = "" # Paypal URL
+#patreon = "" # Patreon URL
+#bitcoin = "" # example path: images/donation/bitcoin-code-image.png
 
 [copyrightOptions]
 enableCopyrightLink = false # if set, you can add copyright link
@@ -171,11 +174,11 @@ copyrightLinkImage = ""
 copyrightLinkText = ""
 
 # possible share name: "facebook","twitter", "reddit", "linkedin", "tumblr", "weibo", "douban", "line", "whatsapp", "telegram"
-[[share]]
-name = "facebook"
-[[share]]
-name = "twitter"
-username = ""
+#[[share]]
+#name = "facebook"
+#[[share]]
+#name = "twitter"
+#username = ""
 
 [[footerLinks]]
 name = ""
