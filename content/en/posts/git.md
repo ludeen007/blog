@@ -4,6 +4,25 @@ categories = ["Bash命令"]
 tags = ["Bash命令", "Git", "Linux"]
 +++
 
+## git 最佳实践
+
+### bash-git-prompt
+
+在 bash 命令提示符后面，显示有用的 git 信息，比如有几个文件改动等
+<https://github.com/magicmonty/bash-git-prompt>
+
+### git 命令别名，减少打字
+
+<https://github.com/GitAlias/gitalias>
+
+### git cheat sheet
+
+<https://github.com/arslanbilal/git-cheat-sheet>
+
+### git tips
+
+<https://github.com/git-tips/tips>
+
 ## git 命令
 
 ```bash
@@ -15,6 +34,9 @@ git config credential.helper store
 
 #当改了很多代码，却又只想提交某部分修改，用以下命令，详见https://stackoverflow.com/questions/1085162/commit-only-part-of-a-file-in-git
 git add --patch filename
+
+#查看diff，只看新增和修改，不看删除等
+git diff --diff-filter=AM
 
 #格式化git commit message
 npx git-cz
@@ -46,8 +68,23 @@ git rev-parse --git-path hooks
 git diff alpha tmp --name-only | grep -v "crypto-config"
 #对比两个git分支，且忽略指定目录和文件
 git diff accfa7d7  HEAD ":(exclude)node_modules/" ":(exclude)*.yaml"
-如果经常需要忽略某个目录，比如node_modules/，可以在/etc/profile加入环境变量
+
+#如果经常需要忽略某个目录，比如node_modules/，可以在/etc/profile加入环境变量
 EXCL=":(exclude)node_modules/"
-然后执行命令时引用它
+#然后执行命令时引用它
 git diff --cached --name-only $EXCL
+
+#conditional config on Windows，在Windows系统的某些目录下用新的配置文件
+.gitconfig添加includeIf定制某些目录下git用别的配置文件
+示例：目录c:/directory-name/subdir/下，用email user2@two.com而不是全局的email user1@one.com
+.gitconfig内容示例
+[user]
+        name = user1
+        email = user1@one.com
+[includeIf "gitdir/i:c:/directory-name/subdir/"]
+        path = .gitconfig-another
+.gitconfig-another 设置别的配置项，比如 email
+.gitconfig-another内容示例
+[user]
+        email = user2@two.com
 ```
