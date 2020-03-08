@@ -1,7 +1,7 @@
 +++
 title = "VSCode"
 categories = ["VSCode"]
-tags = ["Tools", "VSCode", "tips"]
+tags = ["VSCode", "tips"]
 +++
 
 ## 一、 使用技巧
