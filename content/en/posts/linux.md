@@ -164,3 +164,28 @@ for value in "${queues[@]}"; do
     rabbitmqadmin.py -H $HOST -P $PORT -V $VHOST -u guest -p guest delete queue name=$PREFIX$value
 done
 ```
+
+## grep
+
+### 排除某个目录搜索字符串
+
+```bash
+grep -R --exclude-dir=node_modules '.requestMq(' .
+```
+
+### sudo echo “something” >> /etc/privilegedFile doesn't work
+
+```bash
+echo 'deb blah ... blah' | sudo tee -a /etc/apt/sources.list
+# To avoid printing data back to the console, redirect the output to /dev/null
+echo 'deb blah ... blah' | sudo tee -a /etc/apt/sources.list > /dev/null
+```
+
+## 使用inode number 删除文件
+
+```bash
+# 列出文件的inode number
+ls -il
+# 删除
+find . -inum inode_number -exec rm -i {} \;
+```
