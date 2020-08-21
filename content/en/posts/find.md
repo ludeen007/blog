@@ -1,5 +1,5 @@
 +++
-title = "grep"
+title = "find"
 categories = ["Bash命令"]
 tags = ["Bash命令", "find"]
 +++
